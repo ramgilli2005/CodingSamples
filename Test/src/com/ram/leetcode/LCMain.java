@@ -46,7 +46,7 @@ public class LCMain {
 		System.out.println("Location :" +  si.searchInsert(nums, 7));
 		System.out.println("Location :" +  si.searchInsert(nums1, 4));
 	} */
-	public static void main(String[] args) {
+	/* public static void main(String[] args) {
 		SolValidateSudoku svs = new SolValidateSudoku();
 		/*char[][] board = {
 				{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
@@ -59,7 +59,7 @@ public class LCMain {
 			    {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
 			    {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
 		};*/
-		char[][] board = {
+		/*char[][] board = {
 			{'.', '.', '.', '.', '5', '.', '.', '1', '.'},
 		    {'.', '4', '.', '3', '.', '.', '.', '.', '.'},
 		    {'.', '.', '.', '.', '.', '3', '.', '.', '1'},
@@ -76,6 +76,18 @@ public class LCMain {
 		} else {
 			System.out.println("Invalid numbers in board");
 		}
+		
+	} */
+
+	public static void main(String[] args) {
+		LongestSubstring ls = new LongestSubstring();
+//		System.out.println(ls.lengthofLongestSubstring("abba"));
+//		System.out.println(ls.lengthofLongestSubstring("abcabcdb"));
+//		System.out.println(ls.lengthofLongestSubstring("bbbbbb"));
+//		System.out.println(ls.lengthofLongestSubstring("pwwkew"));
+//		System.out.println(ls.lengthofLongestSubstring("aab"));
+//		System.out.println(ls.lengthofLongestSubstring("dvbdf"));
+		System.out.println(ls.lengthofLongestSubstring("qrsvbspk"));
 		
 	}
 
