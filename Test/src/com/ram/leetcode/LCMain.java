@@ -1,6 +1,6 @@
 package com.ram.leetcode;
 
-import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class LCMain {
 
@@ -79,7 +79,7 @@ public class LCMain {
 		
 	} */
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		LongestSubstring ls = new LongestSubstring();
 //		System.out.println(ls.lengthofLongestSubstring("abba"));
 //		System.out.println(ls.lengthofLongestSubstring("abcabcdb"));
@@ -89,6 +89,15 @@ public class LCMain {
 //		System.out.println(ls.lengthofLongestSubstring("dvbdf"));
 		System.out.println(ls.lengthofLongestSubstring("qrsvbspk"));
 		
+	}*/
+
+	public static void main(String[] args) {
+		TwoSumClass tsc = new TwoSumClass();
+		int[] numbers = {1,2,3,4,5};
+		int target = 6;
+		int[] indices = tsc.twoSum(numbers, target);
+		
+		IntStream.of(indices).forEach(System.out::println);
 	}
 
 }
