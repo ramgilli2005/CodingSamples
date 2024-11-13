@@ -1,32 +1,21 @@
 package com.ram.leetcode;
 
-public class TwoSumClass {
-    public int[] twoSum(int[] numbers, int target) {
-        int[] indices = new int[2];
-        
-        boolean found = false;
-        for(int i=0; i< numbers.length; i++) {
-        	int interim = target - numbers[i];
-        	
-        	for(int j=i+1; j<numbers.length; j++) {
-        		if(numbers[j] == interim) {
-        			found = true;
-        			indices[0] = i;
-        			indices[1] = j;
-        			break;
-        		}
-        	}
-        	if(found) {
-        		break;
-        	}
-        	
-        }
-        
-        if(!found) {
-        	indices[0] = -1;
-			indices[1] = -1;
-        }
+import java.util.HashMap;
 
-        return indices;
+public class TwoSumClass {
+    public int[] twoSum(int[] nums, int target) {
+    	
+    	HashMap<Integer, Integer> prevMap = new HashMap<Integer, Integer>();
+    	
+    	for (int i=0; i<nums.length; i++) {
+    		int compliment = target - nums[i];
+    		if(prevMap.containsKey(compliment)) {
+    			return new int[] {prevMap.get(compliment), i};
+    		}
+    		prevMap.put(nums[i],i );
+    	}
+    	
+    	return new int[2];
+    	
     }
 }
