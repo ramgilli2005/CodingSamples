@@ -1,5 +1,6 @@
 package com.ram.leetcode;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class LCMain {
@@ -91,13 +92,31 @@ public class LCMain {
 		
 	}*/
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		TwoSumClass tsc = new TwoSumClass();
 		int[] numbers = {1,2,3,4,5};
 		int target = 6;
 		int[] indices = tsc.twoSum(numbers, target);
 		
 		IntStream.of(indices).forEach(System.out::println);
+	}*/
+	
+	/*public static void main(String[] args) {
+		SolContainsDup dup = new SolContainsDup();
+		int[] numbers = {1,2,3,4};
+		int[] numbers2 = {1,2,3,1};
+		
+		System.out.println(dup.containsDuplicate(numbers));
+		System.out.println(dup.containsDuplicate(numbers2));
+	} */
+	
+	public static void main(String[] args) {
+		ProductESelf pes = new ProductESelf();
+		int[] nums = {1,2,3,4,5};
+		
+		int[] output = pes.productExceptSelf(nums);
+		
+		Arrays.stream(output).forEach(n -> System.out.print(n + " " ));
 	}
 
 }
